@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="project2_style.css">
+</head>
+
+<body>
+	<div class="backstage">
+		<div class="backstage_title">
+			<h1>管理員平台</h1>
+		</div>
+		<div class="backstage_item">
+			<h2>商品上架</h2>
+		</div>
+		<div class="item_content">
+			<div class="product">
+				<form class="form" action="/add-product" method="post">
+					<div class="product_form">
+						<h3>商品資訊</h3>
+						
+						<label>商品名稱:</label>
+						<input type="text" name="name"><br/>
+						
+						<label>商品價格: NT$</label>
+						<input type="text" name="price"><br/>
+						
+						<label>商品庫存:</label>
+						<input type="text" name="stock"><br/>
+						
+						<label>顏色:</label>
+						<input type="checkbox" name="color" value="black">
+						<label>黑色</label>
+						<input type="checkbox" name="color" value="white">
+						<label>白色</label>
+						<input type="checkbox" name="color" value="gray">
+						<label>灰色</label><br/>
+						
+						<label>有無搭配免運活動:</label>
+						<input type="radio" name="free_fare">
+						<label>有</label>
+						<input type="radio" name="free_fare">
+						<label>沒有</label><br/>
+						
+						<label>分類:</label>
+						<input list="type">
+						<datalist id="type">
+							<option>衣服</option>
+							<option>褲子</option>
+							<option>包包</option>
+							<option>外套</option>
+							<option>內襯</option>
+							<option>襪子</option>
+							<option>髮飾</option>
+							<option>帽子</option>
+						</datalist><br/>
+						
+						<label>商品描述:</label><br/>
+						<textarea rows="10px" cols="60px" name="description"></textarea><br/>
+						
+						<div class="upload_btn">
+							<label class="btn_label">
+								<input class="upload_img" type="file" name="image">上傳圖片
+							<label><br/>
+						</div>
+					</div>
+					<div class="factory_info">
+						<h3>工廠資訊</h3>
+						<label>聯絡人:</label>
+						<input type="text" name="principal"><br/>
+						
+						<label>電話:</label>
+						<input type="tel" name="phone" placeholder="0912-345-678" pattern="[0-9]{4}[0-9]{3}[0-9]{3}"><br/>
+						
+						<label>信箱( E-mail ):</label>
+						<input type="email" name="email"><br/>
+						
+						<label>地區:</label>
+						<select type="select" name="address">
+							<option value="Taipei">台北</option>
+							<option value="Taichung">台中</option>
+							<option value="Tainan">台南</option>
+							<option value="Kaohsiung">高雄</option>
+							<option value="Pingtung">屏東</option>
+							<option value="Taitung">台東</option>
+						</select><br/>
+						
+						<label>收貨日期:</label>
+						<input type="date" name="date"><br/>
+					</div>
+					<div class="button">
+						<button type="submit" onclick="alert('新增完成!')">新增</button>
+						<button type="reset" onclick="alert('全部清除!')">重設</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="change">
+			<a href="https://github.com/pchun2330"><div class="circle bs5"><p>BS5+JS version</p></div></a>
+		</div>
+	</div>
+</body>
+</hmtl>
