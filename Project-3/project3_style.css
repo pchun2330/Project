@@ -1,0 +1,47 @@
+.noline:link{
+	text-decoration:none;
+	
+}
+.noline:hover{
+	color:red;
+}
+.bt_search{
+	width:50%;
+}
+.content_img{
+	width:100%;
+}
+.row{
+	padding:20px;
+}
+.img_yahoo{
+	width:100px;
+	border-right:2px solid gray;
+	padding:3px;
+}
+.img_text{
+	padding:3px;
+	margin-left:3px;
+}
+.text{
+	text-align:center;
+	padding:5px;
+}
+.icon_pos{
+	height:50px;
+}
+span{
+	display:flex;
+}
+.hot,h2{
+	margin-bottom:10px;
+}
+.hot_box{
+	margin-bottom:50px;
+}
+.hot_text{
+	color:black;
+}
+h5{
+	color:orange;
+}
