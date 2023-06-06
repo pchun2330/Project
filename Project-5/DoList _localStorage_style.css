@@ -1,0 +1,62 @@
+.box{
+	padding:10px;
+
+}
+h1,.output{
+	text-align:center;
+}
+.content{
+	width:50%;
+	padding:20x;
+	margin:0 auto;
+}
+.radius,.content{
+	border-radius:10px;
+}
+.text{
+	margin-left:10px;
+}
+.li_style{
+	margin-bottom:10px;
+}
+.spa_style{
+	padding:10px;
+}
+.ex_box{
+	margin-bottom:10px;
+	padding:3px;
+}
+.label_style{
+	margin:0 auto;
+	text-align:center;
+}
+
+.change{
+	position:fixed;
+	right:0;
+	bottom:0;
+	height:110px;
+	width:200px;
+}
+.change a{
+	text-decoration:none;
+	color:black;
+}
+.circle{
+	border-radius:20px;
+	margin-bottom:20px;
+	margin-top:10px;
+	height:80px;
+	width:150px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bs5{
+	background-color:#F5CD50;
+}
+.bs5:hover{
+	box-shadow: 0 -4px 10px 0 rgba(97, 89, 66, 0.5);
+	background-color:#615942;
+	color:white;
+	transform:translateY(-10px) scale(1.1);
+}
