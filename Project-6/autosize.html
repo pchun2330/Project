@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="autosize_style.css">
+	<!--Bs5-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!--Autosize-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.20/autosize.js" integrity="sha512-IPqIv5PLMZsJgrFwpmEdO4Lj3GtgO3JOG4dI8Sc20pKj5YIRbE1Y5nPuT0UrtsV4h+oSey5jBCnkRHkO/73ujA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!--vanilla-lazyload-->
+	<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+	<!--Chart.js-->
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+	<!--DateTimePicker-->
+	<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.css" integrity="sha512-bYPO5jmStZ9WI2602V2zaivdAnbAhtfzmxnEGh9RwtlI00I9s8ulGe4oBa5XxiC6tCITJH/QG70jswBhbLkxPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!--kenwheeler-slick-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+	<!--TinyMCE-->
+	<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+</head>
+<body>
+	
+	<ul class="nav nav-tabs nav-justified">
+		<li class="nav-item">
+			<a class="nav-link " data-bs-toggle="tab" href="#Autosize"><strong>Autosize套件</strong></a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" data-bs-toggle="tab" href="#vanilla-lazyload "><strong>vanilla-lazyload 套件</strong></a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" data-bs-toggle="tab" href="#Chart-js">Chart.js 套件</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" data-bs-toggle="tab" href="#DateTimePicker">DateTimePicker套件</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" data-bs-toggle="tab" href="#kenwheeler-slick">kenwheeler/slick 套件</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link " data-bs-toggle="tab" href="#TinyMCE">TinyMCE 套件</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link active" data-bs-toggle="tab" href="#Bootstrap5">Bootstrap 5</a>
+		</li>
+	</ul>
+	<div class="tab-content">
+		<div class="tab-pane " id="Autosize">
+			<div class="container">
+				<h1><strong>Autosize套件</strong></h1>
+			</div>
+			<div class="box text-center">
+				<form class="form">
+					<input class="form-control w-50" placeholder="暱稱" />
+					<textarea rows="3" class="form-control w-50"></textarea>
+				</form>
+				<button type="submit" class="submit-btn">送出</button>
+			</div>
+		</div>
+		<div class="tab-pane" id="vanilla-lazyload">
+			<div class="container">
+				<h1><strong>使用vanilla-lazyload加載圖片</strong></h1>
+			</div>
+			<div class="scrollingPanel">
+				<img class="lazy" data-src="https://images.unsplash.com/photo-1682080019175-dcf97dca51d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNzd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60">
+				<img class="lazy" data-src="https://images.unsplash.com/photo-1681988415084-cbb0e4751840?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyODR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60">
+				<img class="lazy" data-src="https://images.unsplash.com/photo-1681842220536-89efb94d3513?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60">
+				<img class="lazy" data-src="https://images.unsplash.com/photo-1681394344916-5cecb2d25eae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMTN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60">
+				<img class="lazy" data-src="https://images.unsplash.com/photo-1681819670843-28ece64f1929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMjZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60">
+				<img class="lazy" data-src="https://images.unsplash.com/photo-1681907285321-3e0389094193?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMzB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60">
+				<img class="lazy" data-src="https://images.unsplash.com/photo-1682048717093-b2b8bd59d294?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMzR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60">
+				<img class="lazy" data-src="https://images.unsplash.com/photo-1681813945450-a849404d645a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNDB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60">
+				<img class="lazy" data-src="https://plus.unsplash.com/premium_photo-1674593231084-d8b27596b134?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNjR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60">
+				<img class="lazy" data-src="https://images.unsplash.com/photo-1681907624035-63bf2107301c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNjV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60">
+				<img class="lazy" data-src="https://images.unsplash.com/photo-1681775554325-6a8f5b07d648?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNzJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60">
+				<img class="lazy" data-src="https://images.unsplash.com/photo-1682017907196-b48a185d477e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzODN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+				<img class="lazy" data-src="https://images.unsplash.com/photo-1682070082799-c0ec188820df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOTd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+				<!--<table class="table">
+				<img class="lazy" data-src="">
+				<tr>
+					<td>
+						<img class="lazy" data-src="https://images.unsplash.com/photo-1594058573823-d8edf1ad3380?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+					</td>
+					<td>
+						<img class="lazy" data-src="https://plus.unsplash.com/premium_photo-1671379086168-a5d018d583cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="lazy" data-src="https://images.unsplash.com/photo-1682282462523-996afa93708b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+					</td>
+					<td>
+						<img class="lazy" data-src="https://images.unsplash.com/photo-1682337913785-c81be90f01d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+					</td>
+				</tr>	
+				<tr>
+					<td>
+						<img class="lazy" data-src="https://images.unsplash.com/photo-1682344507761-14a24b76737f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+					</td>
+					<td>
+						<img class="lazy" data-src="https://images.unsplash.com/photo-1682343069605-0b8a06f63d73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="lazy" data-src="https://images.unsplash.com/photo-1682326605629-ad1876630d1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2M3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+					</td>
+					<td>
+						<img class="lazy" data-src="https://images.unsplash.com/photo-1682250134515-da20e2e9a6db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="lazy" data-src="https://images.unsplash.com/photo-1682261431182-fde2c332bee9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+					</td>
+					<td>
+						<img class="lazy" data-src="https://images.unsplash.com/photo-1682169391623-46de7799b501?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMzN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+					</td>
+				</tr>
+				</table>-->
+			</div>
+		</div>
+		<div class="tab-pane" id="Chart-js">
+			<div class="container">
+				<h1><strong>Chart.js繪製圖表、報表</strong></h1>
+			</div>
+			<nav class="chart">
+				<ul class="nav nav-pills justify-content-center nav-justified">
+					<li class="nav-item">
+						<a class="nav-link active" data-bs-toggle="pill" href="#Allchart">全部</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="pill" href="#Barchart">長條圖</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="pill" href="#Linechart">折線圖</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="pill" href="#Areachart">圓餅圖</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="tab-content">
+				<div class="tab-pane active" id="Allchart">
+					<a href="#"><h3>110各縣市綜合圖</h3></a>
+					<div class="report">
+						<canvas id="myChart-all"></canvas>
+					</div>
+					<a href="#"><h3 class="mt-5">110各縣市人口分布圖</h3></a>
+					<div class="report">
+						<canvas id="myChart3"></canvas>
+					</div>
+				</div>
+				<div class="tab-pane" id="Barchart">
+					<a href="https://data.gov.tw/dataset/157993"><h3>110各縣市首次生產婦女之平均年齡</h3></a>
+					<div class="report">
+						<canvas  id="myChart"></canvas>
+					</div>
+				</div>
+				<div class="tab-pane" id="Linechart">
+					<a href="https://www.dgbas.gov.tw/ct.asp?xItem=48187&ctNode=5624"><h3>110各縣市人口平均所得</h3></a>
+					<div class="report">
+						<canvas id="myChart2"></canvas>
+					</div>
+				</div>
+				<div class="tab-pane" id="Areachart">
+					<a href="https://statdb.dgbas.gov.tw/pxweb/Dialog/View.asp?ti=&path=../OneSection/temp&lang=9&strList=L&ma=Po0101A1AT001&ViewplusIncHeader=0"><h3>110各縣市人口分布</h3></a>
+					<div class="report">
+						<canvas id="myChart4"></canvas>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="tab-pane" id="DateTimePicker">
+			<div class="container">
+				<h1><strong>DateTimePicker套件(JQuery)</strong></h1>
+			</div>
+			<div class="box text-center">
+				<h3 class="mb-3">選擇訂房時間</h3>
+				<table>
+					<tr>
+						<th class="border-right">入住日期</th>
+						<th>退房日期</th>
+					</tr>
+					<tr>
+						<td class="border-right"><input class="form-control" id="check-in" type="text"></td>
+						<td><input class="form-control"id="check-out" type="text"></td>
+					</tr>
+					<tr>
+						<th colspan="2"><button class="btn btn-warning" id="btnfin">送出</button></th>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="tab-pane" id="kenwheeler-slick">
+			<div class="container">
+				<h1><strong> kenwheeler/slick 套件(JQuery)</strong></h1>
+			</div>
+			<div class="box text-center">
+				<div class="slider">
+					<div><img src="https://images.unsplash.com/photo-1604537466158-719b1972feb8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"></div>
+					<div><img src="https://plus.unsplash.com/premium_photo-1680100256024-3266fa32a8d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"></div>
+					<div><img src="https://images.unsplash.com/photo-1682459155693-5c4427c6abb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"></div>
+					<div><img src="https://images.unsplash.com/photo-1679678691006-3afa56204979?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"></div>
+					<div><img src="https://images.unsplash.com/photo-1681927423260-aba418af6fbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1MHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"></div>
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane" id="TinyMCE">
+			<div class="container">
+				<h1><strong> TinyMCE 套件</strong></h1>
+			</div>
+			<div class="box text-center">
+				<h3>發佈貼文</h3>
+				<div class="row">
+					<div class="col-sm-10 tinymce-body" placeholder="在想些甚麼?"></div>
+					<div class="col-sm-2 mt-1"><button class="btn btn-warning" id="btnpost"><strong>發佈</strong></button></div>
+				</div>
+			</div>
+			<div class="mt-5 container-content">
+				<h3>貼文牆</h3>
+			</div>
+			<div class="content"><div class="mt-3 postbox mb-5"></div></div>
+			<footer>© 2023 pchun</footer>
+		</div>
+		<div class="tab-pane active" id="Bootstrap5">
+			<div class="container">
+				<h1><strong>Bootstrap 5</strong></h1>
+			</div>
+			<div class="bs5box">
+				<button onclick="registerModal()">點我註冊帳號</button>	
+				<button onclick="postModal()">點我新增貼文</button>
+			</div>
+			<div id="register-modal" class="mymodal">
+				<div class="modals">
+					<h2>註冊帳號</h2>
+						<form action="" id="myForm" class="myForm">
+							<div class="formbox">
+								<div class="formctrl">
+									<label>用戶名</label>
+									<input type="text" id="username" required>
+									<span></span>
+								</div>
+								
+								<div class="formctrl">
+									<label>信箱</label>
+									<input type="email" id="email" required>
+									<span></span>
+								</div>
+								
+								<div class="formctrl">
+									<label>密碼</label>
+									<input type="password" id="pword" required>
+									<span></span>
+								</div>
+							</div>
+						</form>
+						<hr>
+						<button type="submit" id="create">創建</button>
+						<button id="btnclose" class="btnclose">關閉</button>
+				</div>
+				<div class="toast toast-success">您已成功註冊完成!</div>
+			</div>
+			<div id="post-modal" class="mymodal">
+				<div class="modals">
+					<span class="postclose">&times;</span>
+					<table>
+						<tr>
+							<th>標題：</th>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<th>內文：</th>
+							<td><textarea rows="10" col="10"></textarea></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="autosize_script.js"></script>
+</body>
+</html>
