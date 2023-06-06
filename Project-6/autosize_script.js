@@ -1,7 +1,7 @@
 autosize(document.querySelector("textarea"));
 
 var lazyLoadInstance = new LazyLoad({
-  // Your custom settings go here
+
 });
 lazyLoadInstance.update();
 
@@ -260,13 +260,11 @@ const emailBodyConfig = {
 };
 tinymce.init(emailBodyConfig);
 
-//var word=document.querySelector(".tinymce-body").value;
 var btnsubmit=document.querySelector("#btnpost");
 var postcontainer=document.querySelector(".postbox");
 
 btnsubmit.addEventListener('click', () => {
   const content = tinymce.activeEditor.getContent({format: 'text'});
-  //alert(content);
   var postcontent=document.createElement("div");
   postcontent.className="postbox-content";
   postcontent.textContent=content;

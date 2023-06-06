@@ -54,10 +54,6 @@
 	opacity: 1; 
 }
 
-/*table,tr,td{
-	vertical-align:middle;
-}*/
-
 #Chart-js .container{
 	background-color:#81BBF4;
 	color:#31669A;
@@ -118,11 +114,11 @@ h3{
 	padding:0 10px;
 }
 .slick-slide img {
-	filter: brightness(50%);/*or opacity: 0.5; */
+	filter: brightness(50%);
 }
 
 .slick-slide.slick-center img {
-	filter: brightness(100%);/*or opacity: 1; */
+	filter: brightness(100%);
 }
 
 #TinyMCE .container{
@@ -284,12 +280,12 @@ h3{
 	font-weight:bold;
 	width:20%;
 }
-input,textarea{
+#Bootstrap5 input,textarea{
 	height:100px;
 	border:2px solid gray;
 	border-radius:10px;
 }
-table{
+#Bootstrap5 table{
 	display:flex;
 	justify-content: center;
 }
