@@ -64,12 +64,12 @@
 }
 
 .bs5{
-	background-color:#DBECBF;
+	background-color:#84B5C1;
 }
 .bs5:hover{
-	box-shadow: 0 -4px 10px 0 rgba(132, 155, 94, 0.5);
+	box-shadow: 0 -4px 10px 0 rgba(66, 101, 109, 0.5);
 	width:110px;
 	height:110px;
-	background-color:#849B5E;
+	background-color:#84B5C1;
 	color:white;
 }
