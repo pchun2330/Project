@@ -1,0 +1,43 @@
+*{
+    font-family:'Share Tech Mono', sans-serif;
+    background-color: rgba(0,0,0,0.7);
+    color:#fff;
+    border-radius: 10px;
+}
+#app{
+    margin:0 auto;
+    text-align: center;
+    padding:10px;
+}
+button{
+    border:none;
+    font-size: 30px;
+    color:rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+button:hover,li:hover{
+    color:rgb(248, 232, 15);
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+button:disabled{
+    color:rgba(255,255,255,0.5);
+    cursor: not-allowed;
+    transform: scale(1);
+    text-decoration-line: line-through;
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 50px;
+}
+ul{
+    text-align: center;
+    padding-left: 0;
+    padding:20px;
+}
+li{
+    font-size: 30px;
+    display: block;
+}

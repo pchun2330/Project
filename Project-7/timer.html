@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js" charset="UTF-8"></script>
+        <link rel="stylesheet" href="timer_style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap">
+    </head>
+    <body>
+        <div id="app">
+            <h1>Online Timer</h1>
+            <h2>{{formatTime}}</h2>
+            <button @click="startbtn" :disabled="running">
+                {{ running ? 'Start' : current === 0 ? 'Start' : 'Continue' }}
+            </button>
+            <button @click="stopbtn"  :disabled="!running">Stop</button>
+            <button @click="pushbtn"  :disabled="!running">Lap</button>
+            <button @click="resetbtn">Reset</button>
+            <ul>
+                <li v-for="item in list">
+                    {{item.laptime}}
+                </li>
+            </ul>
+        </div>
+    </body>    
+
+    <script src="timer_script.js"></script>
+
+</html>
