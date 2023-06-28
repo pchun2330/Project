@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/vue-notepad/dist/vue-notepad.css" />
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js" charset="UTF-8"></script>
+        <link href="note_style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="app">
+            <h1>Online Notes</h1>
+            <div class="notebook">
+                <div class="bookmark">
+                    <ul>
+                        <li v-for="(item,index) in notes" @click="selectnote(index)">
+                            <span>{{ item.title }}</span>
+                            <button @click.stop="delbtn(index)" class="delbtn">X</button>
+                        </li>
+                    </ul>
+                    <button @click="createnote" class="createbtn">+</button>
+                </div>
+                
+                <div class="bgnote">
+                    <input v-model="title" placeholder="edit title.." />
+                    
+                    <textarea :rows="textrows" v-model="content" @input="updatenote() ; adjustext()" placeholder="edit content.."></textarea>
+                </div>
+            </div>
+
+            <script src="note_script.js" charset="UTF-8"></script>
+        </div>
+    </body>
+    
+</html>
+
+<!--
+    link:   https://jsfiddle.net/4rx6swcu/3/
+            https://jsfiddle.net/4rx6swcu/9/
+-->

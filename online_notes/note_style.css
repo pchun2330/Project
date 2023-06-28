@@ -1,0 +1,106 @@
+#app{
+    margin:0 auto;
+    text-align: center;
+}
+.bgnote{
+    position: relative;
+    background-image:   linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px),
+                        linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: center;
+    background-color: #fff;
+    padding:20px;
+    border:2px solid rgba(0,0,0,0.1);
+    width:60%;
+    margin:10px auto;
+    border-radius: 5px;
+    
+}
+.bgnote input,textarea{
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding:5px;
+}
+.bgnote input{
+    height:30px;
+    width:80%;
+    margin-bottom:20px;
+}
+.bgnote textarea{
+    width:80%;
+    resize:none;
+}
+
+.bookmark{
+    position: absolute;
+    display:flexbox;
+    right:15%;
+    max-width:120px;
+}
+.bookmark ul{
+    display: block;
+    padding-left: 0;
+}
+.bookmark ul li{
+    display: flex;
+    margin-bottom:10px;
+    border:1px solid rgba(0,0,0,0.1);
+    padding-top:20px;
+    padding-left:20px;
+    padding-bottom:20px;
+    border-radius: 2px;
+}
+.bookmark ul li span{
+    overflow: hidden;
+    left: 5px;
+    position: relative;
+}
+.bookmark ul li button{
+    position: absolute;
+    right: 5px;
+    border: none;
+    background-color: inherit;
+    padding:3px;
+    color:inherit;
+    padding-left: 5px;
+}
+.bookmark .createbtn{
+    border: none;
+    background-color: #fff;
+    border:1px solid rgba(0,0,0,0.1);
+    padding:20px 20px 20px 80px;
+    border-radius: 2px;
+    font-size: 30px;
+}
+.bookmark li:hover{
+    transform:translateX(60px) scale(1.1);
+    transition: transform 0.5s ;
+    box-shadow:0 0 10px rgb(13, 135, 249,0.5);
+    background-color: rgb(13, 135, 249);
+    color:#fff;
+    font-weight: bold;
+}
+.createbtn:hover{
+    color:rgb(255, 187, 0);
+    font-weight: bold;
+    transform:scale(1.1);
+    transition: transform 0.5s ;
+    border-color: rgba(0,0,0,0.5);
+    box-shadow:0 0 20px rgba(0,0,0,0.1);
+    font-size: 40px;
+    background-color: rgb(13, 135, 249);
+    border: none;
+}
+.bookmark .delbtn:hover{
+    color:red;
+    font-weight: bold;
+    transform:scale(1.2);
+    transition: transform 0.5s ;
+}
+
+.bookmark li.active {
+    transform: translateX(58px);
+    color: #fff;
+    background-color: rgb(255, 155, 0);
+    font-weight: bold;
+}
