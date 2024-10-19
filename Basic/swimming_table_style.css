@@ -1,0 +1,24 @@
+table,th{
+	border-collapse:collapse;
+}
+table{
+	width:100%;
+}
+caption{
+	font-size:30px;
+}
+.content,table,th,td{
+	border:2px solid white;
+	padding:10px;
+	text-align:center;
+	border-radius:10px;
+}
+.title,th,colgroup{
+	background-color: #D6EEEE;
+}
+.content,td{
+	background-color: #D6d4d4;
+	
+}
+
+

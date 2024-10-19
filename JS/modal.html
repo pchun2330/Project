@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="modal_style.css">
+	
+</head>
+<body>
+
+	<div class="container">
+	<button onclick="loginModal()">點我登入帳號</button>	
+	<button onclick="postModal()">點我新增貼文</button>
+	</div>
+	
+	<div id="login-modal" class="mymodal">
+		<div class="modal">
+			<div>帳號：<input type="text"></div>
+			<div>密碼：<input type="password"></div>
+			<hr>
+			<span></span>
+			<button class="btn-close">關閉</button>
+		</div>
+	</div>
+	<div id="post-modal" class="mymodal">
+		<div class="modal">
+			<span class="close">&times;</span>
+			<table>
+				<tr>
+					<th>標題：</th>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<th>內文：</th>
+					<td><textarea rows="10" col="10"></textarea></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<script src="modal_script.js"></script>
+</body>
+</html>
