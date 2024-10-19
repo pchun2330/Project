@@ -1,0 +1,45 @@
+.toast-success{
+	visibility:hidden;
+}
+.toast-success-show{
+	visibility:visible;
+	background-color:#C3D83E;
+	margin:0 auto;
+	border:none;
+	padding:20px;
+	text-align:center;
+	border-radius:10px;
+	position:fixed;
+	left:40%;
+	top:20%;
+	color:#fff;
+}
+.toast-error{
+	visibility:hidden;
+}
+.toast-error-show{
+	visibility:visible;
+	background-color:#F15F28;
+	margin:0 auto;
+	border:none;
+	padding:20px;
+	text-align:center;
+	border-radius:10px;
+	position:fixed;
+	left:40%;
+	top:32%;
+	color:#fff;
+}
+button{
+	display:inline;
+	vertical-align:middle;
+	width:30%;
+	padding:10px;
+	margin-left:13%;
+	border:none;
+	background-color:#F9EC20;
+	border-radius:20px;
+	font-size:20px;
+	color:#756F1E;
+	text-align:center;
+}
